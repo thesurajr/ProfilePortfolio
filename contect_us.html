@@ -1,0 +1,46 @@
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+            <div class="text">
+                <h1 class="display-7 py-2 text-truncate">Contact Us</h1>
+
+                <form method="POST" action="" name="contactform" id="contactform">
+                    <input type="text" class="form-control" placeholder="Full Name" name="name"/>
+                    <br>
+                    <input type="text" class="form-control" placeholder="Email" name="email" required/>
+                    <br>
+                    <input type="text" class="form-control" placeholder="Phone Number" name="phone"/>
+                    <br>
+                    <input type="text" class="form-control" placeholder="Your Message" name="message"/>
+                    <br>
+                    <input type="submit" value="Send message" class="btn btn-primary" name="submit"/>
+                    <br>
+                </form>
+
+            </div>
+
+        </div>
+        <script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbzTQsNauRDe2npKs0w77lXxU049XFeUxS023H5_R29FdQjPD7jno2d2pgBplvS8waZw/exec'
+			const form = document.forms['contactform']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert('Thanks for Contacting us.'))
+				.catch(error => console.error('Error!', error.message))
+                document.getElementById("contactform").reset();
+			})
+		  </script>
+    </body>
+</html>

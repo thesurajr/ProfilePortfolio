@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My Profile</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="./Css/index.css"/>
+      
+   </head>
+   <body>
+      <div class="container">
+         <div class="wrapper">
+            <a href="">
+            <img src="./img/pic3.png" alt="something went wrong">
+            </a>
+            <div class="title">
+               Suraj Maurya
+            </div>
+            <div class="place">
+               Jaunpur, Uttar Pradesh
+            </div>
+         </div>
+         <div class="content">
+            <p>
+               BCA Final Year,<br>Mohammad Hasan College Jaunpur
+            </p>
+            <div class="buttons">
+               <div class="btn">
+                  <button onclick="window.location.href='./contect_us.html'">Message</button>
+               </div>
+               <div class="btn">
+                  <button onclick="window.location.href='./mywebapps.html'">Click For Project</button>
+               </div>
+            </div>
+         </div>
+         <div class="icons">
+            <li><a href="https://twitter.com/Maurya1304"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="https://wa.me/+918425945555"><span class="fab fa-whatsapp"></span></a></li>
+         </div>
+      </div>
+      <script>
+         const img = document.querySelector("img");
+         const icons = document.querySelector(".icons");
+         img.onclick = function(){
+           this.classList.toggle("active");
+           icons.classList.toggle("active");
+         }
+      </script>
+   </body>
+</html>
