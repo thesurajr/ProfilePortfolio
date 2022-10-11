@@ -74,7 +74,7 @@
           height: 100%;
           width: 100%;
           /* background: #fff; */
-          background: linear-gradient(90deg, #c0ea41, #f39a9d);
+          background: rgb(133, 241, 123);
           border: none;
           outline: none;
           cursor: pointer;
