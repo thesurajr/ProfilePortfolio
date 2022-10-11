@@ -44,7 +44,7 @@
           border-radius: 5px;
         }
         .wrapper .title{
-          color: #fff;
+          color: #fff;  
           font-size: 30px;
           font-weight: 500;
           padding: 10px;
@@ -73,7 +73,8 @@
         .buttons .btn button{
           height: 100%;
           width: 100%;
-          background: #fff;
+          /* background: #fff; */
+          background: linear-gradient(90deg, #c0ea41, #f39a9d);
           border: none;
           outline: none;
           cursor: pointer;
@@ -113,7 +114,7 @@
           transition-delay: 0.4s;
         }
         .container .icons li a{
-          color: #7b00e0;
+          color: #f30b41;
           height: 100%;
           width: 100%;
           border-radius: 50%;
